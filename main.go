@@ -48,7 +48,7 @@ func main() {
 			case kafka.RevokedPartitions:
 				c.Unassign()
 			case *kafka.Message:
-				fmt.Printf("%% Message on %s: %s\n", e.TopicPartition, string(e.Value))
+				fmt.Printf("%% Message is %s\n", string(e.Value))
 				counter++
 				if counter > commitAfter {
 					c.Commit()
