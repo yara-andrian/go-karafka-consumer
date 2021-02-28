@@ -64,5 +64,5 @@ func main() {
 		}
 	}
 	fmt.Printf("Closing consumer\n")
-	c.Close()
+	//c.Close()
 }
